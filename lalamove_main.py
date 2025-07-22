@@ -13,10 +13,12 @@ class JobScreen(tk.Toplevel):
     def __init__(self, master=None):
         super().__init__(master)
         self.title("Lalamove Driver - Jobs")
-        self.geometry("360x780")
+        self.geometry("360x500")
         self.resizable(False, False)
 
-        self.cities = ["City 1", "City 2", "City 3", "City 4", "City 5"]
+        self.cities = ["Spearleaf Refinery", "Shuffleboard Logistics 01", "Shuffleboard Logistics 02", "Fast Automotive Race Track"
+                       , "Trilobite Gas Station", "Belasco City Garage", "Radio Tower", "Sealbrik Quarry", "Horizon Estate", "Lens Flare Studio"
+                       , "Hot Rolled Inc. Steel "]
         self.transport_type = "Van"
 
         self.on_duty = False
@@ -137,7 +139,7 @@ class LalamoveDriverApp(tk.Tk):
         super().__init__()
 
         self.title("Lalamove Driver App")
-        self.geometry("360x780")
+        self.geometry("360x500")
         self.resizable(False, False)
 
         # Mobile Number Label and Entry
